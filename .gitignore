@@ -27,3 +27,6 @@ data/
 
 # Output
 output/
+
+# Wiki logs (local only, not pushed)
+wiki/logs/
