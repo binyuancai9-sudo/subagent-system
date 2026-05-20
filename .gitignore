@@ -2,12 +2,30 @@
 .DS_Store
 Thumbs.db
 
+# 环境变量文件（包含敏感凭证）
+.env
+
+# AKLess 配置文件（包含员工ID等敏感信息）
+odps_config.json
+holo_config.json
+
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 *.egg-info/
-.venv/
+.Python
+
+# 日志
+*.log
+logs/
+
+# 虚拟环境
 venv/
+env/
+ENV/
+.venv/
 
 # IDE
 .idea/
@@ -16,7 +34,6 @@ venv/
 *.swo
 
 # Environment
-.env
 *.local
 
 # Data
@@ -27,6 +44,10 @@ data/
 
 # Output
 output/
+
+# 临时脚本（含敏感信息）
+auto_login_temp.py
+*_temp.py
 
 # Wiki logs (local only, not pushed)
 wiki/logs/
